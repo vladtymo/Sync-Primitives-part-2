@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Mutex", "01_Mutex\01_Mutex.csproj", "{90406EC1-EBFB-43E7-8EF9-C2AED3ECB1B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Semaphore", "02_Semaphore\02_Semaphore.csproj", "{EA0D4515-7658-4FAC-9516-73DAA4F800E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Event", "03_Event\03_Event.csproj", "{D32A2640-A36D-4336-B5AA-49EB0CB0F866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseMutex", "UseMutex\UseMutex.csproj", "{4C9675E8-C87F-4B04-BF61-2D90B8A31BFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_App", "Singleton_App\Singleton_App.csproj", "{C070DB0A-A1C2-45F1-8D86-AFAC337ACCC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_WaitHandler", "04_WaitHandler\04_WaitHandler.csproj", "{BA32C4D8-3F16-4CFB-9DB7-68C42E1D12A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semaphore_downloader", "Semaphore_downloader\Semaphore_downloader.csproj", "{E52FF5D4-7A90-4FEC-BF0E-6CA8D7CE9D13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90406EC1-EBFB-43E7-8EF9-C2AED3ECB1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90406EC1-EBFB-43E7-8EF9-C2AED3ECB1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90406EC1-EBFB-43E7-8EF9-C2AED3ECB1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90406EC1-EBFB-43E7-8EF9-C2AED3ECB1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0D4515-7658-4FAC-9516-73DAA4F800E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0D4515-7658-4FAC-9516-73DAA4F800E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0D4515-7658-4FAC-9516-73DAA4F800E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0D4515-7658-4FAC-9516-73DAA4F800E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32A2640-A36D-4336-B5AA-49EB0CB0F866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32A2640-A36D-4336-B5AA-49EB0CB0F866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32A2640-A36D-4336-B5AA-49EB0CB0F866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32A2640-A36D-4336-B5AA-49EB0CB0F866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C9675E8-C87F-4B04-BF61-2D90B8A31BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9675E8-C87F-4B04-BF61-2D90B8A31BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9675E8-C87F-4B04-BF61-2D90B8A31BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9675E8-C87F-4B04-BF61-2D90B8A31BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C070DB0A-A1C2-45F1-8D86-AFAC337ACCC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C070DB0A-A1C2-45F1-8D86-AFAC337ACCC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C070DB0A-A1C2-45F1-8D86-AFAC337ACCC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C070DB0A-A1C2-45F1-8D86-AFAC337ACCC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA32C4D8-3F16-4CFB-9DB7-68C42E1D12A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA32C4D8-3F16-4CFB-9DB7-68C42E1D12A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA32C4D8-3F16-4CFB-9DB7-68C42E1D12A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA32C4D8-3F16-4CFB-9DB7-68C42E1D12A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52FF5D4-7A90-4FEC-BF0E-6CA8D7CE9D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52FF5D4-7A90-4FEC-BF0E-6CA8D7CE9D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52FF5D4-7A90-4FEC-BF0E-6CA8D7CE9D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52FF5D4-7A90-4FEC-BF0E-6CA8D7CE9D13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {171BE44D-373A-474C-A9AE-78CBC03BAB4F}
+	EndGlobalSection
+EndGlobal
