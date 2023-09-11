@@ -37,7 +37,7 @@ namespace _04_WaitHandler
         {
             EventWaitHandle ev = obj as EventWaitHandle;
 
-            Console.WriteLine("Doing hard work...", Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine("Start hard work...", Thread.CurrentThread.ManagedThreadId);
             Thread.Sleep(new Random().Next(10000));
             Console.WriteLine("Done!", Thread.CurrentThread.ManagedThreadId);
             //ev.Reset(); // set to nonsignaled state

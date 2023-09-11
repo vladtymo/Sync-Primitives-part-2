@@ -89,7 +89,7 @@ namespace _03_Event
             EventWaitHandle ev = obj as EventWaitHandle;
             if (ev.WaitOne(1)) // wait
             {
-                //ev.Reset(); // set to nonsignaled
+                ev.Reset(); // set to nonsignaled
                 Console.WriteLine("Thread {0} managed to slip past", Thread.CurrentThread.ManagedThreadId);
                 Thread.Sleep(100);
                 ev.Set(); // unblock
