@@ -63,7 +63,7 @@ namespace _01_Mutex
             for (int i = 0; i < 100_000; ++i)
             {
                 m.WaitOne(); // wait and then block
-                Console.WriteLine($"Thread id: {Thread.CurrentThread.ManagedThreadId}");
+                //Console.WriteLine($"Thread id: {Thread.CurrentThread.ManagedThreadId}");
                 Console.WriteLine("Count: " + count);
                 ++count;
                 Thread.Sleep(500);

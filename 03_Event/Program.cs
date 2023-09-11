@@ -26,29 +26,29 @@ namespace _03_Event
             //    ThreadPool.QueueUserWorkItem(SomeMethod, mre);
 
             ///////////// Test Manual Reset
-            //ManualResetEvent resetEvent = new ManualResetEvent(false);
-            //ThreadPool.QueueUserWorkItem(ShowSecondsUntilMinutes, resetEvent);
+            ManualResetEvent resetEvent = new ManualResetEvent(true);
+            ThreadPool.QueueUserWorkItem(ShowSecondsUntilMinutes, resetEvent);
 
-            //ConsoleKey key;
-            //do
-            //{
-            //    key = Console.ReadKey().Key;
-            //    switch (key)
-            //    {
-            //        case ConsoleKey.Spacebar:
-            //            resetEvent.Reset();
-            //            break;
-            //        case ConsoleKey.Enter:
-            //            resetEvent.Set();
-            //            break;
-            //    }
-            //} while (key != ConsoleKey.Escape);
+            ConsoleKey key;
+            do
+            {
+                key = Console.ReadKey().Key;
+                switch (key)
+                {
+                    case ConsoleKey.Spacebar:
+                        resetEvent.Reset();
+                        break;
+                    case ConsoleKey.Enter:
+                        resetEvent.Set();
+                        break;
+                }
+            } while (key != ConsoleKey.Escape);
 
-            AutoResetEvent resetEvent = new AutoResetEvent(false);
+            //AutoResetEvent resetEvent = new AutoResetEvent(false);
             //Mutex resetEvent = new Mutex(true);
 
-            ThreadPool.QueueUserWorkItem(M1, resetEvent);
-            ThreadPool.QueueUserWorkItem(M2, resetEvent);
+            //ThreadPool.QueueUserWorkItem(M1, resetEvent);
+            //ThreadPool.QueueUserWorkItem(M2, resetEvent);
 
             Console.WriteLine("Continue...");
             Console.ReadKey();
@@ -89,7 +89,7 @@ namespace _03_Event
             EventWaitHandle ev = obj as EventWaitHandle;
             if (ev.WaitOne(1)) // wait
             {
-                ev.Reset(); // set to nonsignaled
+                //ev.Reset(); // set to nonsignaled
                 Console.WriteLine("Thread {0} managed to slip past", Thread.CurrentThread.ManagedThreadId);
                 Thread.Sleep(100);
                 ev.Set(); // unblock

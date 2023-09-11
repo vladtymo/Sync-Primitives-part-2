@@ -25,12 +25,12 @@ namespace _02_Semaphore
             bool stop = false;
             while (!stop)
             {
-                if (s.WaitOne(500))
+                if (s.WaitOne()) // block one state
                 {
                     try
                     {
                         Console.WriteLine("Thread {0} got a lock", Thread.CurrentThread.ManagedThreadId);
-                        Thread.Sleep(2000);
+                        Thread.Sleep(4000);
                     }
                     finally
                     {

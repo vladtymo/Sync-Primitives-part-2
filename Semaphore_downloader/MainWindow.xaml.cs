@@ -11,8 +11,10 @@ namespace Semaphore_downloader
     public partial class MainWindow : Window
     {
         private static Random rnd = new Random();
-        ObservableCollection<DownloadInfo> downloads = new ObservableCollection<DownloadInfo>();
         private Semaphore download_locker = new Semaphore(3, 3);
+
+        ObservableCollection<DownloadInfo> downloads = new ObservableCollection<DownloadInfo>();
+
         public MainWindow()
         {
             InitializeComponent();

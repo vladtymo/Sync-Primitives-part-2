@@ -13,6 +13,7 @@ namespace UseMutex
         {
             Console.WriteLine("Press any key to start!");
             Console.ReadKey();
+
             Mutex mutex = Mutex.OpenExisting("mars");
 
             while (true)
