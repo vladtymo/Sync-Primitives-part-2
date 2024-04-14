@@ -26,7 +26,7 @@ namespace _03_Event
             //    ThreadPool.QueueUserWorkItem(SomeMethod, mre);
 
             ///////////// Test Manual Reset
-            ManualResetEvent resetEvent = new ManualResetEvent(true);
+            ManualResetEvent resetEvent = new ManualResetEvent(false);
             ThreadPool.QueueUserWorkItem(ShowSecondsUntilMinutes, resetEvent);
 
             ConsoleKey key;

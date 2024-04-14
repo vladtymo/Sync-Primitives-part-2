@@ -60,6 +60,8 @@ namespace _01_Mutex
         {
             Mutex m = obj as Mutex;
 
+            // m.WaitOne(); // wait for green light...
+
             for (int i = 0; i < 100_000; ++i)
             {
                 m.WaitOne(); // wait and then block

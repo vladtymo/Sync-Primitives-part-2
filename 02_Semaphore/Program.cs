@@ -13,7 +13,7 @@ namespace _02_Semaphore
         {
             Semaphore s = new Semaphore(3, 3);
 
-            for (int i = 0; i < 6; ++i)
+            for (int i = 0; i < 12; ++i)
                 ThreadPool.QueueUserWorkItem(SomeMethod, s);
 
             Console.ReadKey();
